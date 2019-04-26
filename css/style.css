@@ -145,20 +145,42 @@
 @media screen and (min-width: 1200px) {
   #myHeader .header__contain {
     width: 90%; } }
-.taiXe__container {
-  padding: 0 20px; }
-  .taiXe__container .taiXe__left {
-    position: relative; }
-    .taiXe__container .taiXe__left .taiXe {
-      position: absolute; }
-      .taiXe__container .taiXe__left .taiXe.taiXe1 {
-        top: 0;
-        left: 20px; }
-      .taiXe__container .taiXe__left .taiXe.taiXe-2 {
-        top: 0;
-        left: 0; }
-      .taiXe__container .taiXe__left .taiXe.taiXe3 {
-        top: 0;
-        left: 40px; }
+#why .why-container {
+  background-color: #f3fcff;
+  padding: 40px 0; }
+  #why .why-container .why-title {
+    text-align: center; }
+    #why .why-container .why-title .title {
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 70px; }
+    #why .why-container .why-title .subtitle {
+      color: #707070;
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 35px; }
+  #why .why-container .why-content {
+    margin-top: 40px; }
+    #why .why-container .why-content .why-item {
+      text-align: center;
+      padding: 0 15px; }
+      #why .why-container .why-content .why-item img {
+        height: 65px; }
+      #why .why-container .why-content .why-item h2 {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 30px;
+        font-weight: 500;
+        margin: 30px 0 10px 0; }
+      #why .why-container .why-content .why-item p {
+        color: #707070;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 35px;
+        margin-bottom: 16px; }
+
+@media screen and (min-width: 768px) {
+  #why .why-container .why-content {
+    margin-top: 100px; } }
 
 /*# sourceMappingURL=style.css.map */
