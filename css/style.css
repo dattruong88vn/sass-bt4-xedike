@@ -148,39 +148,47 @@
 #why .why-container {
   background-color: #f3fcff;
   padding: 40px 0; }
-  #why .why-container .why-title {
-    text-align: center; }
-    #why .why-container .why-title .title {
-      color: rgba(0, 0, 0, 0.85);
-      font-size: 36px;
-      font-weight: 500;
-      line-height: 70px; }
-    #why .why-container .why-title .subtitle {
-      color: #707070;
-      font-size: 22px;
-      font-weight: normal;
-      line-height: 35px; }
   #why .why-container .why-content {
-    margin-top: 40px; }
-    #why .why-container .why-content .why-item {
-      text-align: center;
-      padding: 0 15px; }
-      #why .why-container .why-content .why-item img {
-        height: 65px; }
-      #why .why-container .why-content .why-item h2 {
+    width: 100%;
+    margin: auto; }
+    #why .why-container .why-content .why-title {
+      text-align: center; }
+      #why .why-container .why-content .why-title .title {
         color: rgba(0, 0, 0, 0.85);
-        font-size: 30px;
+        font-size: 36px;
         font-weight: 500;
-        margin: 30px 0 10px 0; }
-      #why .why-container .why-content .why-item p {
+        line-height: 70px; }
+      #why .why-container .why-content .why-title .subtitle {
         color: #707070;
         font-size: 22px;
         font-weight: normal;
-        line-height: 35px;
-        margin-bottom: 16px; }
+        line-height: 35px; }
+    #why .why-container .why-content .why-body {
+      margin-top: 40px; }
+      #why .why-container .why-content .why-body .why-item {
+        text-align: center;
+        padding: 0 15px;
+        margin-top: 30px; }
+        #why .why-container .why-content .why-body .why-item img {
+          height: 65px; }
+        #why .why-container .why-content .why-body .why-item h2 {
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 26px;
+          font-weight: 500;
+          margin: 30px 0 10px 0; }
+        #why .why-container .why-content .why-body .why-item p {
+          color: #707070;
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 35px;
+          margin-bottom: 16px; }
 
 @media screen and (min-width: 768px) {
   #why .why-container .why-content {
+    margin-top: 100px; } }
+@media screen and (min-width: 1400px) {
+  #why .why-container .why-content {
+    width: 90%;
     margin-top: 100px; } }
 
 /*# sourceMappingURL=style.css.map */
