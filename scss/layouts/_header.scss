@@ -1,0 +1,169 @@
+#myHeader {
+    background: $color-black-3;
+    .header__contain {
+        width: 98%;
+        margin: auto;
+        padding: 20px 0;
+        .header__left {
+            float: left;
+            .header__logo {
+                width: auto;
+                img {
+                    height: 30px;
+                    display: block;
+                }
+            }
+            .header__link {
+                text-align: center;
+                padding: 0 20px;
+                margin-left: 10px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    bottom: -20px;
+                    left:0;
+                    content: "";
+                    height: 4px;
+                    width: 0;
+                    background-color: $color-blue-1;
+                }
+                &:hover::after {
+                    width: 100%;
+                    animation: hover-header-link 0.3s ease;
+                }
+                a {
+                    @include text($color-white-1, $fs-0, $fw-3);
+                    text-decoration: none;
+                }
+            }
+        }   
+        .header__center {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: $color-black-4;
+            padding: 10px;
+            z-index: 100;;
+            & > div {
+                justify-content: center;
+            }
+            .header__button {
+                .myBtn {
+                    margin: 0 5px;
+                    &.myBtn--black {
+                        border: 1px solid $color-white-1;
+                    }
+                }
+            }
+        }
+        .header__right {
+            display: none;
+            .header__icon {
+                display: block;
+                margin-left: 15px;
+                position: relative;
+                .header__dropdown {
+                    display: none;
+                    position: absolute;
+                    top: 19px;
+                    right: -5px;
+                    width: 300px;
+                    background-color: $color-0;
+                    padding: 30px 0;
+                    .dropdown__content {
+                        background-color: $color-white-1;
+                        border-radius: $br-1;
+                        padding: 16px;
+                        border: 1px solid $color-grey-4;
+                        position: relative;
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            li {
+                                font-size: $fs-0;
+                                line-height: $lh-1;
+                            }
+                        }
+                        &::after {
+                            position: absolute;
+                            top: -6px;
+                            right: 6px;
+                            content: "";
+                            width: 10px;
+                            height: 10px;
+                            transform: rotate(45deg);
+                            border-left: 1px solid $color-grey-4;
+                            border-top: 1px solid $color-grey-4;
+                            background-color: $color-white-1;
+                        }
+                    }
+                }
+                &:hover .header__dropdown {
+                    display: block;
+                }
+                i {
+                @include text($color-grey-1, $fs-4, $fw-1);
+                line-height: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    #myHeader {
+        .header__contain {
+            padding: 10px 0;
+            .header__left {
+                .header__logo {
+                    img {
+                        height: 50px;
+                    }
+                }
+                .header__link {
+                    margin-left: 25px;
+                    &::after {
+                        bottom: -10px;
+                    }
+                }
+            } 
+            .header__center {
+                position: unset;
+                width: auto;
+                background-color: transparent;
+                padding: unset;
+                flex-grow: 1;
+                & > div {
+                    justify-content: flex-end;
+                }
+            }
+            .header__right {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {
+    #myHeader {
+        .header__contain {
+            width: 90%;
+        }
+    }
+}
+

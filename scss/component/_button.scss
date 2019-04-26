@@ -1,0 +1,12 @@
+.myBtn {
+    height: 45px;
+    border-radius: $br-1;
+    overflow: hidden;
+    padding: 0 15px;
+    &.myBtn--black {
+        @include button($color-white-1, $color-0, $color-0, $color-blue-2, $color-0, $color-0);
+    }
+    &.myBtn--blue {
+        @include button($color-white-1, $color-blue-1, $color-blue-1, $color-white-1, $color-blue-3, $color-blue-3);
+    }
+}

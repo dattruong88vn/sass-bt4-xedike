@@ -1,0 +1,21 @@
+.taiXe__container {
+    padding: 0 20px;
+    .taiXe__left {
+        position: relative;
+        .taiXe {
+            position: absolute;
+            &.taiXe1 {
+                top: 0;
+                left: 20px;
+            }
+            &.taiXe-2 {
+                top: 0;
+                left: 0;
+            }
+            &.taiXe3 {
+                top: 0;
+                left: 40px;
+            }
+        }
+    }
+}

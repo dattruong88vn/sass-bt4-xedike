@@ -1,0 +1,11 @@
+@keyframes hover-header-link {
+    0% {
+        background-color: transparent;
+    }
+    30% {
+        background-color: $color-white-1;
+    }
+    100% {
+        background-color: $color-blue-1;
+    }
+}
