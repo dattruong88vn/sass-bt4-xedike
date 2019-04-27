@@ -1,31 +1,31 @@
 #numbers {
     background: url(../img/img_background_static.png) no-repeat bottom;
     background-size: cover;
-    .numbers__container {
+    .numbers_bg {
         background-color: $color-black-4;
-        
         .numbers__content {
             width: 100%;
             padding: 30px 0;
             .numbers__image {
                 position: relative;
                 height: 340px;
+                width: 90%;
+                margin: auto;
                 img {
-                    text-align: center;
-                    vertical-align: middle;
                     position: absolute;
-                    &.img--second {
-                        left: 30px;
-                        top: 30px;
-                        width: 180px;
-                    }
+                    vertical-align: middle;
                     &.img--first {
                         right: 30px;
                         width: 300px;
                         top: 30%;
                     }
+
+                    &.img--second {
+                        left: 30px;
+                        top: 30px;
+                        width: 180px;
+                    }
                 }
-                
             }
         }
     }
@@ -37,12 +37,18 @@
             .numbers__content {
                 .numbers__image {
                     img {
-                        &.img--second {
-                        }
                         &.img--first {
+                            right: 30px;
+                            width: 565px;
+                            top: 30%;
+                        }
+
+                        &.img--second {
+                            width: 212px;
+                            left: 10px;
                         }
                     }
-                    
+
                 }
             }
         }
