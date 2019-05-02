@@ -9,8 +9,6 @@
             .numbers__image {
                 position: relative;
                 height: 340px;
-                width: 90%;
-                margin: auto;
                 img {
                     position: absolute;
                     vertical-align: middle;
@@ -27,28 +25,50 @@
                     }
                 }
             }
+            .numbers__info {
+                .numbers__item {
+                    margin-bottom: 30px;
+                    h1 {
+                        @include text ($color-blue-6, $fs-11, $fw-3);
+                        margin-bottom: 20px;
+                    }
+                    h4 {
+                        @include text ($color-white-1, $fs-4, $fw-3);
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        @include text ($color-black-6, $fs-0, $fw-3);
+                        text-align: justify;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
         }
     }
 }
 
 @media screen and (min-width:768px) {
     #numbers {
-        .numbers__container {
+        .numbers_bg {
             .numbers__content {
+                padding: 80px 0;
                 .numbers__image {
                     img {
                         &.img--first {
-                            right: 30px;
-                            width: 565px;
-                            top: 30%;
+                            width: 100%;
+                            right: 0px;
+                            top: 40%;
                         }
-
                         &.img--second {
-                            width: 212px;
-                            left: 10px;
+                            width: 40%;
+                            top:50%;
                         }
                     }
-
+                }
+                .numbers__info {
+                    .numbers__item {
+                       
+                    }
                 }
             }
         }

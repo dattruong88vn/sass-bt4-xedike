@@ -200,9 +200,7 @@
       padding: 30px 0; }
       #numbers .numbers_bg .numbers__content .numbers__image {
         position: relative;
-        height: 340px;
-        width: 90%;
-        margin: auto; }
+        height: 340px; }
         #numbers .numbers_bg .numbers__content .numbers__image img {
           position: absolute;
           vertical-align: middle; }
@@ -214,14 +212,34 @@
             left: 30px;
             top: 30px;
             width: 180px; }
+      #numbers .numbers_bg .numbers__content .numbers__info .numbers__item {
+        margin-bottom: 30px; }
+        #numbers .numbers_bg .numbers__content .numbers__info .numbers__item h1 {
+          color: #04b3f9;
+          font-size: 36px;
+          font-weight: 500;
+          margin-bottom: 20px; }
+        #numbers .numbers_bg .numbers__content .numbers__info .numbers__item h4 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 10px; }
+        #numbers .numbers_bg .numbers__content .numbers__info .numbers__item p {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 16px;
+          font-weight: 500;
+          text-align: justify;
+          margin-bottom: 15px; }
 
 @media screen and (min-width: 768px) {
-  #numbers .numbers__container .numbers__content .numbers__image img.img--first {
-    right: 30px;
-    width: 565px;
-    top: 30%; }
-  #numbers .numbers__container .numbers__content .numbers__image img.img--second {
-    width: 212px;
-    left: 10px; } }
+  #numbers .numbers_bg .numbers__content {
+    padding: 80px 0; }
+    #numbers .numbers_bg .numbers__content .numbers__image img.img--first {
+      width: 100%;
+      right: 0px;
+      top: 40%; }
+    #numbers .numbers_bg .numbers__content .numbers__image img.img--second {
+      width: 40%;
+      top: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
