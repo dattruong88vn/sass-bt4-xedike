@@ -21,6 +21,15 @@
       color: #fff;
       background-color: #26abed;
       border: 1px solid #26abed; }
+  .myBtn.myBtn--orange {
+    color: #f96d00;
+    background-color: #fff;
+    border: 1px solid #f96d00;
+    transition: all .5s; }
+    .myBtn.myBtn--orange:hover {
+      color: #fff;
+      background-color: #f96d00;
+      border: 1px solid #fff; }
 
 @keyframes hover-header-link {
   0% {
@@ -237,9 +246,35 @@
     #numbers .numbers_bg .numbers__content .numbers__image img.img--first {
       width: 100%;
       right: 0px;
-      top: 40%; }
+      top: 20%; }
     #numbers .numbers_bg .numbers__content .numbers__image img.img--second {
       width: 40%;
-      top: 50%; } }
+      top: 30%; } }
+#orange .orange__bg {
+  background-color: #f96d00;
+  padding: 30px 0 60px; }
+  #orange .orange__bg .orange__container .orange__image {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #orange .orange__bg .orange__container .orange__center h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0; }
+  #orange .orange__bg .orange__container .orange__center p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 16px; }
+
+@media screen and (min-width: 720px) {
+  #orange .orange__bg {
+    padding: 0; }
+    #orange .orange__bg .orange__container .orange__center {
+      text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */
