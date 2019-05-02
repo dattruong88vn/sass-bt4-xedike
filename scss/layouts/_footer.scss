@@ -1,0 +1,118 @@
+#footer {
+    .footer__container {
+        width: 70%;
+        margin: 0 auto;
+        padding: 30px 0;
+
+        .footer__col1 {
+            img {
+                margin-bottom: 27px;
+                height: 85px;
+            }
+
+            i {
+                @include text ($color-grey-5, $fs-12, $fw-0);
+            }
+
+            span {
+                // margin-bottom: 17px;
+                margin-left: 14px;
+                line-height: $fs-5;
+                display: inline-block;
+                font-size: $fs-0;
+                letter-spacing: $ls-1;
+            }
+
+            .footer__social {
+                a {
+                    margin-left: 10px;
+
+                    img {
+                        width: 64px;
+                        height: 64px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .footer__col2,
+        .footer__col3,
+        .footer__col4 {
+            margin: 20px 0;
+            padding-left: 40px;
+
+            h5 {
+
+                @include text ($color-black-2, $fs-4, $fw-5);
+                margin-bottom: 20px;
+            }
+
+            a {
+                @include text (gray, $fs-0, $fw-0);
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #footer {
+        .footer__container {
+            width: 80%;
+
+            .footer__col1 {
+                img {}
+
+                i {}
+
+                span {}
+
+                .footer__social {
+                    a {
+                        img {}
+                    }
+                }
+            }
+
+            .footer__col2,
+            .footer__col3,
+            .footer__col4 {
+                h5 {}
+
+                a {}
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    #footer {
+        .footer__container {
+            width: 95%;
+
+            .footer__col1 {
+                img {}
+
+                i {}
+
+                span {}
+
+                .footer__social {
+                    a {
+                        img {}
+                    }
+                }
+            }
+
+            .footer__col2,
+            .footer__col3,
+            .footer__col4 {
+                h5 {}
+
+                a {}
+            }
+        }
+    }
+}

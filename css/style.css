@@ -66,7 +66,7 @@
           background-color: #008fe1; }
         #myHeader .header__contain .header__left .header__link:hover::after {
           width: 100%;
-          animation: hover-header-link 0.3s ease; }
+          animation: hover-header-link 1s ease; }
         #myHeader .header__contain .header__left .header__link a {
           color: #fff;
           font-size: 16px;
@@ -276,5 +276,55 @@
     padding: 0; }
     #orange .orange__bg .orange__container .orange__center {
       text-align: left; } }
+#footer .footer__container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0; }
+  #footer .footer__container .footer__col1 img {
+    margin-bottom: 27px;
+    height: 85px; }
+  #footer .footer__container .footer__col1 i {
+    color: #b5b7b8;
+    font-size: 22px;
+    font-weight: normal; }
+  #footer .footer__container .footer__col1 span {
+    margin-left: 14px;
+    line-height: 26px;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.5px; }
+  #footer .footer__container .footer__col1 .footer__social a {
+    margin-left: 10px; }
+    #footer .footer__container .footer__col1 .footer__social a img {
+      width: 64px;
+      height: 64px;
+      margin: 0; }
+  #footer .footer__container .footer__col2,
+  #footer .footer__container .footer__col3,
+  #footer .footer__container .footer__col4 {
+    margin: 20px 0;
+    padding-left: 40px; }
+    #footer .footer__container .footer__col2 h5,
+    #footer .footer__container .footer__col3 h5,
+    #footer .footer__container .footer__col4 h5 {
+      color: #333333;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    #footer .footer__container .footer__col2 a,
+    #footer .footer__container .footer__col3 a,
+    #footer .footer__container .footer__col4 a {
+      color: gray;
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      margin-bottom: 10px; }
+
+@media screen and (min-width: 576px) {
+  #footer .footer__container {
+    width: 80%; } }
+@media screen and (min-width: 992px) {
+  #footer .footer__container {
+    width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
