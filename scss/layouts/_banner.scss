@@ -1,0 +1,216 @@
+#myBanner {
+    .Banner__container {
+        background: url('../img/img_banner_home.png') no-repeat top center;
+        padding: 40px 0 0;
+        background-size: cover;
+
+        .Banner__content {
+            width: 95%;
+            margin: auto;
+            background: transparent;
+
+            .Banner__title {
+                text-align: center;
+                margin-bottom: 60px;
+
+                h4 {
+                    @include text ($color-white-1, $fs-8, $fw-6);
+                }
+
+                p {
+                    @include text($color-white-1, $fs-4, $fw-7);
+                    letter-spacing: normal;
+                }
+            }
+
+            .Banner__input {
+                width: 80%;
+                margin: 0 auto;
+
+                .input__content {
+                    display: block;
+                    margin: auto;
+                    background-color: transparent;
+
+                    .input__left,
+                    .input__right {
+                        &>* {
+                            margin-bottom: 30px;
+                        }
+
+                        input {
+                            background-color: transparent;
+                            border: none;
+
+                            input:focus {
+                                border: none;
+                            }
+                        }
+                    }
+
+                    .input__right {
+                        display: flex;
+
+                        .input__soCho {
+                            position: relative;
+
+                            input {
+                                padding-left: 20px;
+                            }
+
+                            div {
+                                position: absolute;
+                                top: 18px;
+                                left: 60px;
+                            }
+                        }
+                    }
+
+                    .input__button {
+                        overflow: hidden;
+
+                        .input__item {
+                            border: none;
+                        }
+
+                        button {
+                            span {
+                                line-height: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .Banner__history {
+                background: transparent;
+                position: relative;
+                height: 100px;
+                margin: 100px auto 0;
+
+                .history__container {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 90%;
+                    margin: auto;
+
+                    .history__content {
+                        width: 90%;
+                        background: $color-white-1;
+                        margin: auto;
+                        padding: 10%;
+                        border-radius: $br-1;
+                        text-align: center;
+
+                        img {
+                            width: 152px;
+                            margin: 20px auto 0;
+                        }
+
+                        p {
+                            margin: 30px 0 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #myBanner {
+        .Banner__container {
+            .Banner__content {
+                .Banner__input {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #myBanner {
+        .Banner__container {
+            .Banner__content {
+                width: 90%;
+
+                .Banner__title {
+                    h4 {
+                        @include text ($color-white-1, $fs-7, $fw-3);
+                        margin-bottom: 30px;
+                    }
+
+                    p {
+                        @include text($color-white-1, $fs-5, $fw-7);
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .Banner__input {
+                    width: 98%;
+
+                    .input__content {
+                        display: flex;
+                        background-color: $color-white-1;
+                        border-radius: $br-1;
+
+                        .input__left,
+                        .input__right {
+                            display: flex;
+
+                            &>* {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        .input__right {
+                            .input__soCho {
+                                input {
+                                }
+    
+                                div {
+                                    top: 25px;
+                                }
+                            }
+                        }
+
+                        .input__button {
+                            border-top-right-radius: $br-1;
+                            border-bottom-right-radius: $br-1;
+                            overflow: hidden;
+
+                            .input__item {
+                                border: none;
+                            }
+
+                            button {
+                                border-radius: unset;
+                                padding: 0;
+                                border: none;
+
+                                span {
+                                    font-size: $fs-4;
+                                    height: 100%;
+                                    line-height: 70px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .Banner__history {
+                    
+                    .history__container {
+                        .history__content {
+                            img {}
+
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

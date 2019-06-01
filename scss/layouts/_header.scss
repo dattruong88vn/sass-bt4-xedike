@@ -29,7 +29,7 @@
                 }
                 &:hover::after {
                     width: 100%;
-                    animation: hover-header-link 0.3s ease;
+                    animation: hover-header-link 1s ease;
                 }
                 a {
                     @include text($color-white-1, $fs-0, $fw-3);

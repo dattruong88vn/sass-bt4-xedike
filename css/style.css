@@ -21,7 +21,72 @@
       color: #fff;
       background-color: #26abed;
       border: 1px solid #26abed; }
+  .myBtn.myBtn--orange {
+    color: #f96d00;
+    background-color: #fff;
+    border: 1px solid #f96d00;
+    transition: all .5s; }
+    .myBtn.myBtn--orange:hover {
+      color: #fff;
+      background-color: #f96d00;
+      border: 1px solid #fff; }
 
+.input__item {
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: 1px solid #dddddd; }
+  .input__item .input__icon {
+    height: 70px;
+    text-align: center; }
+    .input__item .input__icon i {
+      line-height: 70px; }
+  .input__item input {
+    height: 70px;
+    padding: 0; }
+    .input__item input.form-control:focus {
+      box-shadow: none; }
+  .input__item .dropdown {
+    position: relative; }
+    .input__item .dropdown .dropdown-toggle::after {
+      content: unset; }
+    .input__item .dropdown .dropdown-menu {
+      position: absolute;
+      top: 4px !important;
+      left: 0 !important;
+      width: 100%;
+      border: none;
+      padding: 0;
+      border-radius: 5px;
+      overflow: hidden; }
+      .input__item .dropdown .dropdown-menu ul {
+        padding: 0;
+        margin: 0; }
+        .input__item .dropdown .dropdown-menu ul li {
+          padding: 5px 15px; }
+          .input__item .dropdown .dropdown-menu ul li a {
+            color: #333333;
+            font-size: 16px;
+            font-weight: normal;
+            text-decoration: none; }
+          .input__item .dropdown .dropdown-menu ul li:hover, .input__item .dropdown .dropdown-menu ul li.active {
+            background-color: #e6faff; }
+            .input__item .dropdown .dropdown-menu ul li:hover a, .input__item .dropdown .dropdown-menu ul li.active a {
+              font-weight: 600; }
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none; }
+
+@media screen and (max-width: 1200px) {
+  .input__item {
+    border-radius: 5px; }
+    .input__item .input__icon {
+      height: 60px; }
+      .input__item .input__icon i {
+        line-height: 60px; }
+    .input__item input {
+      height: 60px; } }
 @keyframes hover-header-link {
   0% {
     background-color: transparent; }
@@ -57,7 +122,7 @@
           background-color: #008fe1; }
         #myHeader .header__contain .header__left .header__link:hover::after {
           width: 100%;
-          animation: hover-header-link 0.3s ease; }
+          animation: hover-header-link 1s ease; }
         #myHeader .header__contain .header__left .header__link a {
           color: #fff;
           font-size: 16px;
@@ -145,6 +210,181 @@
 @media screen and (min-width: 1200px) {
   #myHeader .header__contain {
     width: 90%; } }
+#myBanner .Banner__container {
+  background: url("../img/img_banner_home.png") no-repeat top center;
+  padding: 40px 0 0;
+  background-size: cover; }
+  #myBanner .Banner__container .Banner__content {
+    width: 95%;
+    margin: auto;
+    background: transparent; }
+    #myBanner .Banner__container .Banner__content .Banner__title {
+      text-align: center;
+      margin-bottom: 60px; }
+      #myBanner .Banner__container .Banner__content .Banner__title h4 {
+        color: #fff;
+        font-size: 32px;
+        font-weight: bolder; }
+      #myBanner .Banner__container .Banner__content .Banner__title p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: lighter;
+        letter-spacing: normal; }
+    #myBanner .Banner__container .Banner__content .Banner__input {
+      width: 80%;
+      margin: 0 auto; }
+      #myBanner .Banner__container .Banner__content .Banner__input .input__content {
+        display: block;
+        margin: auto;
+        background-color: transparent; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left > *,
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right > * {
+          margin-bottom: 30px; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left input,
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right input {
+          background-color: transparent;
+          border: none; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left input input:focus,
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right input input:focus {
+            border: none; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right {
+          display: flex; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right .input__soCho {
+            position: relative; }
+            #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right .input__soCho input {
+              padding-left: 20px; }
+            #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right .input__soCho div {
+              position: absolute;
+              top: 18px;
+              left: 60px; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button {
+          overflow: hidden; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button .input__item {
+            border: none; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button button span {
+            line-height: 60px; }
+    #myBanner .Banner__container .Banner__content .Banner__history {
+      background: transparent;
+      position: relative;
+      height: 100px;
+      margin: 100px auto 0; }
+      #myBanner .Banner__container .Banner__content .Banner__history .history__container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        margin: auto; }
+        #myBanner .Banner__container .Banner__content .Banner__history .history__container .history__content {
+          width: 90%;
+          background: #fff;
+          margin: auto;
+          padding: 10%;
+          border-radius: 5px;
+          text-align: center; }
+          #myBanner .Banner__container .Banner__content .Banner__history .history__container .history__content img {
+            width: 152px;
+            margin: 20px auto 0; }
+          #myBanner .Banner__container .Banner__content .Banner__history .history__container .history__content p {
+            margin: 30px 0 40px; }
+
+@media screen and (min-width: 768px) {
+  #myBanner .Banner__container .Banner__content .Banner__input {
+    width: 60%; } }
+@media screen and (min-width: 1200px) {
+  #myBanner .Banner__container .Banner__content {
+    width: 90%; }
+    #myBanner .Banner__container .Banner__content .Banner__title h4 {
+      color: #fff;
+      font-size: 46px;
+      font-weight: 500;
+      margin-bottom: 30px; }
+    #myBanner .Banner__container .Banner__content .Banner__title p {
+      color: #fff;
+      font-size: 26px;
+      font-weight: lighter;
+      letter-spacing: 1px; }
+    #myBanner .Banner__container .Banner__content .Banner__input {
+      width: 98%; }
+      #myBanner .Banner__container .Banner__content .Banner__input .input__content {
+        display: flex;
+        background-color: #fff;
+        border-radius: 5px; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left,
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right {
+          display: flex; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left > *,
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right > * {
+            margin-bottom: 0; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right .input__soCho div {
+          top: 25px; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          overflow: hidden; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button .input__item {
+            border: none; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button button {
+            border-radius: unset;
+            padding: 0;
+            border: none; }
+            #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button button span {
+              font-size: 20px;
+              height: 100%;
+              line-height: 70px; } }
+#taiXe .taiXe__content {
+  padding: 30px 0;
+  margin: 0 auto; }
+  #taiXe .taiXe__content .taiXe__left {
+    position: relative; }
+    #taiXe .taiXe__content .taiXe__left img {
+      position: absolute;
+      text-align: center; }
+    #taiXe .taiXe__content .taiXe__left .taixe1 {
+      position: relative !important;
+      z-index: 3;
+      margin: auto; }
+    #taiXe .taiXe__content .taiXe__left .taixe2 {
+      left: -60px; }
+    #taiXe .taiXe__content .taiXe__left .taixe3 {
+      right: -60px; }
+  #taiXe .taiXe__content .taiXe__right {
+    padding: 0 40px;
+    text-align: center; }
+    #taiXe .taiXe__content .taiXe__right h1 {
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 20px; }
+    #taiXe .taiXe__content .taiXe__right p {
+      padding: 0 20px;
+      white-space: normal;
+      color: #707070;
+      font-size: 16px;
+      font-weight: normal;
+      margin: 20px 0;
+      line-height: 30px; }
+    #taiXe .taiXe__content .taiXe__right button {
+      display: inline-block;
+      margin-top: 20px; }
+
+@media screen and (min-width: 768px) {
+  #taiXe .taiXe__content .taiXe__left .taixe2 {
+    left: -20px; }
+  #taiXe .taiXe__content .taiXe__left .taixe3 {
+    right: -20px; }
+  #taiXe .taiXe__content .taiXe__right {
+    text-align: left; }
+    #taiXe .taiXe__content .taiXe__right p {
+      padding: 0; } }
+@media screen and (min-width: 992px) {
+  #taiXe .taiXe__content {
+    width: 90%; }
+    #taiXe .taiXe__content .taiXe__left .taixe2 {
+      left: 0px; }
+    #taiXe .taiXe__content .taiXe__left .taixe3 {
+      right: 0px; }
+    #taiXe .taiXe__content .taiXe__right p {
+      padding: 0; } }
 #why .why-container {
   background-color: #f3fcff;
   padding: 40px 0; }
@@ -190,5 +430,173 @@
   #why .why-container .why-content {
     width: 90%;
     margin-top: 100px; } }
+#numbers {
+  background: url(../img/img_background_static.png) no-repeat bottom;
+  background-size: cover; }
+  #numbers .numbers_bg {
+    background-color: rgba(38, 51, 66, 0.9); }
+    #numbers .numbers_bg .numbers__content {
+      width: 100%;
+      padding: 30px 0; }
+      #numbers .numbers_bg .numbers__content .numbers__image {
+        position: relative;
+        height: 340px; }
+        #numbers .numbers_bg .numbers__content .numbers__image img {
+          position: absolute;
+          vertical-align: middle; }
+          #numbers .numbers_bg .numbers__content .numbers__image img.img--first {
+            right: 30px;
+            width: 300px;
+            top: 30%; }
+          #numbers .numbers_bg .numbers__content .numbers__image img.img--second {
+            left: 30px;
+            top: 30px;
+            width: 180px; }
+      #numbers .numbers_bg .numbers__content .numbers__info .numbers__item {
+        margin-bottom: 30px; }
+        #numbers .numbers_bg .numbers__content .numbers__info .numbers__item h1 {
+          color: #04b3f9;
+          font-size: 36px;
+          font-weight: 500;
+          margin-bottom: 20px; }
+        #numbers .numbers_bg .numbers__content .numbers__info .numbers__item h4 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 10px; }
+        #numbers .numbers_bg .numbers__content .numbers__info .numbers__item p {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 16px;
+          font-weight: 500;
+          text-align: justify;
+          margin-bottom: 15px; }
+
+@media screen and (min-width: 768px) {
+  #numbers .numbers_bg .numbers__content {
+    padding: 80px 0; }
+    #numbers .numbers_bg .numbers__content .numbers__image img.img--first {
+      width: 100%;
+      right: 0px;
+      top: 20%; }
+    #numbers .numbers_bg .numbers__content .numbers__image img.img--second {
+      width: 40%;
+      top: 30%; } }
+#orange .orange__bg {
+  background-color: #f96d00;
+  padding: 30px 0 60px; }
+  #orange .orange__bg .orange__container .orange__image {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #orange .orange__bg .orange__container .orange__center h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0; }
+  #orange .orange__bg .orange__container .orange__center p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 16px; }
+
+@media screen and (min-width: 720px) {
+  #orange .orange__bg {
+    padding: 0; }
+    #orange .orange__bg .orange__container .orange__center {
+      text-align: left; } }
+#footer .footer__container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0; }
+  #footer .footer__container .footer__top .footer__col1 img {
+    margin-bottom: 27px;
+    height: 85px; }
+  #footer .footer__container .footer__top .footer__col1 i {
+    color: #b5b7b8;
+    font-size: 22px;
+    font-weight: normal; }
+  #footer .footer__container .footer__top .footer__col1 span {
+    margin-left: 14px;
+    line-height: 26px;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.5px; }
+  #footer .footer__container .footer__top .footer__col1 .footer__social a {
+    margin-left: 10px; }
+    #footer .footer__container .footer__top .footer__col1 .footer__social a img {
+      width: 64px;
+      height: 64px;
+      margin: 0; }
+  #footer .footer__container .footer__top .footer__col2,
+  #footer .footer__container .footer__top .footer__col3,
+  #footer .footer__container .footer__top .footer__col4 {
+    margin: 20px 0;
+    padding-left: 40px; }
+    #footer .footer__container .footer__top .footer__col2 p,
+    #footer .footer__container .footer__top .footer__col3 p,
+    #footer .footer__container .footer__top .footer__col4 p {
+      margin-bottom: 12px; }
+    #footer .footer__container .footer__top .footer__col2 h5,
+    #footer .footer__container .footer__top .footer__col3 h5,
+    #footer .footer__container .footer__top .footer__col4 h5 {
+      color: #333333;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    #footer .footer__container .footer__top .footer__col2 a,
+    #footer .footer__container .footer__top .footer__col3 a,
+    #footer .footer__container .footer__top .footer__col4 a {
+      color: gray;
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      margin-bottom: 10px; }
+  #footer .footer__container .footer__bottom {
+    margin-top: 40px;
+    border-top: #eee solid 1px;
+    padding: 27px 0; }
+    #footer .footer__container .footer__bottom .footer__item {
+      margin-bottom: 20px;
+      text-align: center; }
+      #footer .footer__container .footer__bottom .footer__item span {
+        display: block;
+        color: #333333;
+        font-size: 14px;
+        font-weight: normal; }
+
+@media screen and (min-width: 576px) {
+  #footer .footer__container .footer__bottom .footer__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify; }
+    #footer .footer__container .footer__bottom .footer__item .span {
+      display: inline-block; } }
+@media screen and (min-width: 992px) {
+  #footer .footer__container {
+    width: 95%; }
+    #footer .footer__container .footer__bottom .footer__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: justify; }
+      #footer .footer__container .footer__bottom .footer__item .span {
+        display: inline-block; } }
+#myImage {
+  position: relative;
+  height: 200px; }
+  #myImage .myImage {
+    width: 100%;
+    position: absolute;
+    background: url("../../img/img_background_5trip.6ad1787f.png") repeat-x bottom; }
+
+@media screen and (min-width: 768px) {
+  #myImage {
+    height: 650px; }
+    #myImage .myImage {
+      height: 650px; } }
 
 /*# sourceMappingURL=style.css.map */

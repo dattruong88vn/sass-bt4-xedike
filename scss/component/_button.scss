@@ -9,4 +9,7 @@
     &.myBtn--blue {
         @include button($color-white-1, $color-blue-1, $color-blue-1, $color-white-1, $color-blue-3, $color-blue-3);
     }
+    &.myBtn--orange {
+        @include button($color-orange-1, $color-white-1, $color-orange-1, $color-white-1, $color-orange-1,$color-white-1);
+    }
 }

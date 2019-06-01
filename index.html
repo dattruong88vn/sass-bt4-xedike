@@ -7,11 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Font Awesome 4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- Link Css -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=vietnamese" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -69,12 +72,172 @@
 
         <!-- banner -->
         <section id="myBanner">
+            <div class="Banner__container">
+                <div class="Banner__content">
+                    <div class="Banner__title">
+                        <h4>Bắt đầu chuyến đi của bạn</h4>
+                        <p>Đã có 1159 thành viên sử dụng dịch vụ trên toàn quốc</p>
+                    </div>
+                    <div class="Banner__input">
+                        <div class="input__content">
+                            <!-- Nơi đi nơi đến -->
+                            <div class="col-12 col-xl-6 px-0">
+                                <div class="input__left">
+                                    <!-- nơi đi -->
+                                    <div class="input__item col-12 col-xl-6 px-0">
+                                        <div class="dropdown">
+                                            <div class="d-flex w-100 dropdown-toggle" data-toggle="dropdown">
+                                                <div class="input__icon col-1 col-xl-2 pr-0">
+                                                    <i style="color:#2bc71f;" class="fa fa-search"></i>
+                                                </div>
+                                                <div class="col-10 d-flex px-0">
+                                                    <div class="col-11 col-xl-10 px-xl-0">
+                                                        <input class="form-control" type="text" placeholder="Nơi đi">
+                                                    </div>
+                                                    <div class="input__icon col-2">
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li class="dropdown-item active">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- nơi đến -->
+                                    <div class="input__item col-12 col-xl-6 px-0">
+                                        <div class="dropdown">
+                                            <div class="d-flex w-100 dropdown-toggle" data-toggle="dropdown">
+                                                <div class="input__icon col-1 col-xl-2 pr-0">
+                                                    <i style="color:#f95f48;" class="fa fa-search"></i>
+                                                </div>
+                                                <div class="col-10 d-flex px-0">
+                                                    <div class="col-11 col-xl-10 px-xl-0">
+                                                        <input class="form-control" type="text" placeholder="Nơi đến">
+                                                    </div>
+                                                    <div class="input__icon col-2">
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li class="dropdown-item active">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ngày đi + số chỗ -->
+                            <div class="col-12 col-xl-4 px-0">
+                                <div class="input__right justify-content-between">
+                                    <div class="col-6 pr-1 pr-sm-2 px-0 px-xl-0">
+                                        <div class="input__item col-12 px-0 ">
+                                            <div class="d-flex w-100">
+                                                <div class="input__icon col-1 col-xl-2 pr-0">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <div class="col-11 col-xl-10">
+                                                    <input class="form-control" type="date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="soCho col-6 px-0 pl-1 pl-sm-2 px-xl-0">
+                                        <div class="input__item col-12 px-0">
+                                            <div class="d-flex w-100">
+                                                <div class="input__icon col-1 col-xl-2 pr-0">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                                <div class="col-11 col-xl-10">
+                                                    <div class="input__soCho">
+                                                        <input class="form-control" type="number" placeholder="0">
+                                                        <div>chỗ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <div class="input__button col-12 col-xl-2 px-0">
+                                <button class="myBtn myBtn--blue w-100 h-100">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-search mr-3"></i>
+                                        <span>Check</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Banner__history">
+                        <div class="container-fluid">
+                            <div class="history__container">
+                                <div class="history__content">
+                                    <img src="./img/img_trip_empty.png" alt="">
+                                    <p>Không có chuyến đi nào.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image -->
+        <section id="myImage">
+            <div class="myImage">
+
+            </div>
         </section>
 
         <!-- Driver -->
         <section id="taiXe">
-
+            <div class="taiXe__content d-flex justify-content-between">
+                <div class="row mx-0 px-2">
+                    <div class="taiXe__left col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="d-flex justify-content-center">
+                            <img src="./img/img_driver_1.png" alt="driver1" class="taixe1">
+                            <img src="./img/img_driver_2.png" alt="driver2" class="taixe2">
+                            <img src="./img/img_driver_3.png" alt="driver3" class="taixe3">
+                        </div>
+                    </div>
+                    <div class="taiXe__right col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="h-100 d-flex flex-column justify-content-center">
+                            <h1>Bắt đầu chuyến xe của bạn</h1>
+                            <p>Là người sẽ mang những chuyến xe cũng như những trải nghiệm cho Khách hàng. Các tài
+                                xế
+                                luôn là những người hiểu rõ Khách hàng cần những gì là tốt nhất. Tất nhiên, chúng
+                                tôi có
+                                những Quy định cụ thể để đảm bảo lợi ích lớn nhất cho tất cả các bên.</p>
+                            <div>
+                                <button class="myBtn myBtn--blue">Trở thành tài xế</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Why -->
         <section id="why">
@@ -91,7 +254,7 @@
                             </div>
                         </div>
                         <div class="why-body">
-                            <div class="row">
+                            <div class="row mx-0">
                                 <div class="col-12 col-lg-4 why-item">
                                     <img src="./img/img_trust.png" alt="">
                                     <h2>Tin tưởng</h2>
@@ -116,6 +279,198 @@
                 </div>
             </div>
         </section>
+        <!-- numbers -->
+        <section id="numbers">
+            <div class="numbers_bg d-flex align-items-center">
+                <div class="numbers__content">
+                    <div class="row mx-0">
+                        <div class="col-12 col-md-6 px-0">
+                            <div class="numbers__image">
+                                <img class="img--first" src="./img/img_mac.png" alt="">
+                                <img class="img--second" src="./img/img_iPad.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 px-0">
+                            <div class="numbers__info">
+                                <div class="row px-3 mx-0">
+                                    <div class="row mx-0 text-white">
+                                        <div class="numbers__item col-12 col-md-6">
+                                            <h1>685</h1>
+                                            <h4>Hành khách</h4>
+                                            <p>Hàng nghìn lượt khách tin tưởng chúng tôi để tìm những chuyến xe với
+                                                chất lượng tốt nhất.</p>
+                                        </div>
+                                        <div class="numbers__item col-12 col-md-6">
+                                            <h1>483</h1>
+                                            <h4>Tài xế</h4>
+                                            <p>Hệ thống của chúng tôi kết nối hàng trăm tài xế sẵn sàng phục vụ nhu
+                                                cầu đi lại mỗi ngày.</p>
+                                        </div>
+                                        <div class="numbers__item col-12 col-md-6">
+                                            <h1>426</h1>
+                                            <h4>Chuyến xe</h4>
+                                            <p>Số liệu này cho chúng tôi biết bạn đã về đến nhà an toàn.</p>
+                                        </div>
+                                        <div class="numbers__item col-12 col-md-6">
+                                            <h1>4385.32</h1>
+                                            <h4>Khí CO2 được giảm (kg)</h4>
+                                            <p>Chúng ta đã góp phần làm giảm lượng khí CO2 trung bình mỗi ngày.</p>
+                                            <p>Trái Đất sẽ rất biết ơn chúng ta về điều này.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- orange -->
+        <section id="orange">
+            <div class="orange__bg text-white text-center">
+                <div class="d-flex align-items-center">
+                    <div class="orange__container row mx-0 d-flex align-items-center">
+                        <div class="col-12 col-md-3">
+                            <div class="orange__image">
+                                <img src="./img/img_gift.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="orange__center">
+                                <h4>Hoàn thành Chuyến xe để nhận Ưu đãi cho các Chuyến sau</h4>
+                                <p>Huray! Hãy click HOÀN THÀNH, và để lại những đánh giá của bạn về chuyến đi của mình
+                                    để nhận được điểm tích lũy cho những chuyến đi tiếp theo.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button type="button" class="myBtn myBtn--orange">Đăng nhập ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <!-- <div class="d-flex align-items-center"> -->
+                    <div class="row mx-0">
+                        <div class="col-12 col-md-6 col-lg-3 px-0">
+                            <div class="footer__col1">
+                                <div class="d-flex flex-column align-content-center">
+                                    <div class="col-12">
+                                        <img src="./img/img_logo_footer.png" alt="">
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center mb-2 px-0">
+                                        <i class="fa fa-phone"></i>
+                                        <span><b>Hỗ trợ Hành Khách:</b> 0905.93.34.53</span>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center mb-2 px-0">
+                                        <i class="fa fa-phone"></i>
+                                        <span><b>Hỗ trợ Tài xế:</b> 0905.93.34.53</span>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center mb-2 px-0">
+                                        <i class="fa fa-envelope"></i>
+                                        <span><b>Email</b> cs@xedike.vn</span>
+                                    </div>
+                                    <div class="footer__social col-12 ">
+                                        <div class="d-flex justify-content between">
+                                            <a href="#">
+                                                <img src="./img/facebook.png" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="./img/linkedin.png" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="./img/ic_zalo.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mt-3">
+                            <div class="footer__col2">
+                                <h5>Thông tin</h5>
+                                <p>
+                                    <a href="#">Liên hệ</a>
+                                </p>
+                                <p>
+                                    <a href="#">Đội ngũ</a>
+                                </p>
+                                <p>
+                                    <a href="#">Tuyển dụng</a>
+                                </p>
+                                <p>
+                                    <a href="#">Những câu hỏi thường gặp</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mt-3">
+                            <div class="footer__col3">
+                                <h5>Xe đi Ké</h5>
+                                <p>
+                                    <a href="#">Điều khoản sử dụng</a>
+                                </p>
+                                <p>
+                                    <a href="#">Chính sách bảo mật thông tin</a>
+                                </p>
+                                <p>
+                                    <a href="#">Quy chế sàn giao dịch</a>
+                                </p>
+                                <p>
+                                    <a href="#">Cơ chế giải quyết tranh chấp</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mt-3">
+                            <div class="footer__col4">
+                                <h5>Hỗ trợ</h5>
+                                <p>
+                                    <a href="#">Đăng kí làm tài xế</a>
+                                </p>
+                                <p>
+                                    <a href="#">Đăng ký hành khách</a>
+                                </p>
+                                <p>
+                                    <a href="#">Hành lý thất lạc</a>
+                                </p>
+                                <p>
+                                    <a href="#">Điều kiện hủy</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="row mx-0">
+                        <div class="footer__item col-12 col-lg-5">
+                            <span>Bản quyền © 2018 XeDiKe.vn. Giữ toàn quyền.</span>
+                            <a href="#">
+                                <img height="40px" src="./img/logo_bo_cong_thuong.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__item col-12 col-lg-3">
+                            <span>Empowered by DNES</span>
+                            <a href="#">
+                                <img height="35px" src="./img/logo_dnes.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__item col-12 col-lg-4">
+                            <span> Sioux High Tech Software Ltd.</span>
+                            <a href="#">
+                                <img height="45px" src="./img/img_logo_sioux.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </div>
 
 
