@@ -7,11 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Font Awesome 4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- Link Css -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=vietnamese" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -69,7 +72,144 @@
 
         <!-- banner -->
         <section id="myBanner">
+            <div class="Banner__container">
+                <div class="Banner__content">
+                    <div class="Banner__title">
+                        <h4>Bắt đầu chuyến đi của bạn</h4>
+                        <p>Đã có 1159 thành viên sử dụng dịch vụ trên toàn quốc</p>
+                    </div>
+                    <div class="Banner__input">
+                        <div class="input__content">
+                            <!-- Nơi đi nơi đến -->
+                            <div class="col-12 col-xl-6 px-0">
+                                <div class="input__left">
+                                    <!-- nơi đi -->
+                                    <div class="input__item col-12 col-xl-6 px-0">
+                                        <div class="dropdown">
+                                            <div class="d-flex w-100 dropdown-toggle" data-toggle="dropdown">
+                                                <div class="input__icon col-1 col-xl-2 pr-0">
+                                                    <i style="color:#2bc71f;" class="fa fa-search"></i>
+                                                </div>
+                                                <div class="col-10 d-flex px-0">
+                                                    <div class="col-11 col-xl-10 px-xl-0">
+                                                        <input class="form-control" type="text" placeholder="Nơi đi">
+                                                    </div>
+                                                    <div class="input__icon col-2">
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li class="dropdown-item active">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- nơi đến -->
+                                    <div class="input__item col-12 col-xl-6 px-0">
+                                        <div class="dropdown">
+                                            <div class="d-flex w-100 dropdown-toggle" data-toggle="dropdown">
+                                                <div class="input__icon col-1 col-xl-2 pr-0">
+                                                    <i style="color:#f95f48;" class="fa fa-search"></i>
+                                                </div>
+                                                <div class="col-10 d-flex px-0">
+                                                    <div class="col-11 col-xl-10 px-xl-0">
+                                                        <input class="form-control" type="text" placeholder="Nơi đến">
+                                                    </div>
+                                                    <div class="input__icon col-2">
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li class="dropdown-item active">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">1</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ngày đi + số chỗ -->
+                            <div class="col-12 col-xl-4 px-0">
+                                <div class="input__right justify-content-between">
+                                    <div class="col-6 pr-1 pr-sm-2 px-0 px-xl-0">
+                                        <div class="input__item col-12 px-0 ">
+                                            <div class="d-flex w-100">
+                                                <div class="input__icon col-1 col-xl-2 pr-0">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <div class="col-11 col-xl-10">
+                                                    <input class="form-control" type="date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="soCho col-6 px-0 pl-1 pl-sm-2 px-xl-0">
+                                        <div class="input__item col-12 px-0">
+                                            <div class="d-flex w-100">
+                                                <div class="input__icon col-1 col-xl-2 pr-0">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                                <div class="col-11 col-xl-10">
+                                                    <div class="input__soCho">
+                                                        <input class="form-control" type="number" placeholder="0">
+                                                        <div>chỗ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <div class="input__button col-12 col-xl-2 px-0">
+                                <button class="myBtn myBtn--blue w-100 h-100">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-search mr-3"></i>
+                                        <span>Check</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Banner__history">
+                        <div class="container-fluid">
+                            <div class="history__container">
+                                <div class="history__content">
+                                    <img src="./img/img_trip_empty.png" alt="">
+                                    <p>Không có chuyến đi nào.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image -->
+        <section id="myImage">
+            <div class="myImage">
+
+            </div>
         </section>
 
         <!-- Driver -->

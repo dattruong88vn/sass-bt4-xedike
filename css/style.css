@@ -31,6 +31,62 @@
       background-color: #f96d00;
       border: 1px solid #fff; }
 
+.input__item {
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: 1px solid #dddddd; }
+  .input__item .input__icon {
+    height: 70px;
+    text-align: center; }
+    .input__item .input__icon i {
+      line-height: 70px; }
+  .input__item input {
+    height: 70px;
+    padding: 0; }
+    .input__item input.form-control:focus {
+      box-shadow: none; }
+  .input__item .dropdown {
+    position: relative; }
+    .input__item .dropdown .dropdown-toggle::after {
+      content: unset; }
+    .input__item .dropdown .dropdown-menu {
+      position: absolute;
+      top: 4px !important;
+      left: 0 !important;
+      width: 100%;
+      border: none;
+      padding: 0;
+      border-radius: 5px;
+      overflow: hidden; }
+      .input__item .dropdown .dropdown-menu ul {
+        padding: 0;
+        margin: 0; }
+        .input__item .dropdown .dropdown-menu ul li {
+          padding: 5px 15px; }
+          .input__item .dropdown .dropdown-menu ul li a {
+            color: #333333;
+            font-size: 16px;
+            font-weight: normal;
+            text-decoration: none; }
+          .input__item .dropdown .dropdown-menu ul li:hover, .input__item .dropdown .dropdown-menu ul li.active {
+            background-color: #e6faff; }
+            .input__item .dropdown .dropdown-menu ul li:hover a, .input__item .dropdown .dropdown-menu ul li.active a {
+              font-weight: 600; }
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none; }
+
+@media screen and (max-width: 1200px) {
+  .input__item {
+    border-radius: 5px; }
+    .input__item .input__icon {
+      height: 60px; }
+      .input__item .input__icon i {
+        line-height: 60px; }
+    .input__item input {
+      height: 60px; } }
 @keyframes hover-header-link {
   0% {
     background-color: transparent; }
@@ -154,6 +210,127 @@
 @media screen and (min-width: 1200px) {
   #myHeader .header__contain {
     width: 90%; } }
+#myBanner .Banner__container {
+  background: url("../img/img_banner_home.png") no-repeat top center;
+  padding: 40px 0 0;
+  background-size: cover; }
+  #myBanner .Banner__container .Banner__content {
+    width: 95%;
+    margin: auto;
+    background: transparent; }
+    #myBanner .Banner__container .Banner__content .Banner__title {
+      text-align: center;
+      margin-bottom: 60px; }
+      #myBanner .Banner__container .Banner__content .Banner__title h4 {
+        color: #fff;
+        font-size: 32px;
+        font-weight: bolder; }
+      #myBanner .Banner__container .Banner__content .Banner__title p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: lighter;
+        letter-spacing: normal; }
+    #myBanner .Banner__container .Banner__content .Banner__input {
+      width: 80%;
+      margin: 0 auto; }
+      #myBanner .Banner__container .Banner__content .Banner__input .input__content {
+        display: block;
+        margin: auto;
+        background-color: transparent; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left > *,
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right > * {
+          margin-bottom: 30px; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left input,
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right input {
+          background-color: transparent;
+          border: none; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left input input:focus,
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right input input:focus {
+            border: none; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right {
+          display: flex; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right .input__soCho {
+            position: relative; }
+            #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right .input__soCho input {
+              padding-left: 20px; }
+            #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right .input__soCho div {
+              position: absolute;
+              top: 18px;
+              left: 60px; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button {
+          overflow: hidden; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button .input__item {
+            border: none; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button button span {
+            line-height: 60px; }
+    #myBanner .Banner__container .Banner__content .Banner__history {
+      background: transparent;
+      position: relative;
+      height: 100px;
+      margin: 100px auto 0; }
+      #myBanner .Banner__container .Banner__content .Banner__history .history__container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        margin: auto; }
+        #myBanner .Banner__container .Banner__content .Banner__history .history__container .history__content {
+          width: 90%;
+          background: #fff;
+          margin: auto;
+          padding: 10%;
+          border-radius: 5px;
+          text-align: center; }
+          #myBanner .Banner__container .Banner__content .Banner__history .history__container .history__content img {
+            width: 152px;
+            margin: 20px auto 0; }
+          #myBanner .Banner__container .Banner__content .Banner__history .history__container .history__content p {
+            margin: 30px 0 40px; }
+
+@media screen and (min-width: 768px) {
+  #myBanner .Banner__container .Banner__content .Banner__input {
+    width: 60%; } }
+@media screen and (min-width: 1200px) {
+  #myBanner .Banner__container .Banner__content {
+    width: 90%; }
+    #myBanner .Banner__container .Banner__content .Banner__title h4 {
+      color: #fff;
+      font-size: 46px;
+      font-weight: 500;
+      margin-bottom: 30px; }
+    #myBanner .Banner__container .Banner__content .Banner__title p {
+      color: #fff;
+      font-size: 26px;
+      font-weight: lighter;
+      letter-spacing: 1px; }
+    #myBanner .Banner__container .Banner__content .Banner__input {
+      width: 98%; }
+      #myBanner .Banner__container .Banner__content .Banner__input .input__content {
+        display: flex;
+        background-color: #fff;
+        border-radius: 5px; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left,
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right {
+          display: flex; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__left > *,
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right > * {
+            margin-bottom: 0; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__right .input__soCho div {
+          top: 25px; }
+        #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          overflow: hidden; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button .input__item {
+            border: none; }
+          #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button button {
+            border-radius: unset;
+            padding: 0;
+            border: none; }
+            #myBanner .Banner__container .Banner__content .Banner__input .input__content .input__button button span {
+              font-size: 20px;
+              height: 100%;
+              line-height: 70px; } }
 #taiXe .taiXe__content {
   padding: 30px 0;
   margin: 0 auto; }
@@ -408,5 +585,18 @@
       text-align: justify; }
       #footer .footer__container .footer__bottom .footer__item .span {
         display: inline-block; } }
+#myImage {
+  position: relative;
+  height: 200px; }
+  #myImage .myImage {
+    width: 100%;
+    position: absolute;
+    background: url("../../img/img_background_5trip.6ad1787f.png") repeat-x bottom; }
+
+@media screen and (min-width: 768px) {
+  #myImage {
+    height: 650px; }
+    #myImage .myImage {
+      height: 650px; } }
 
 /*# sourceMappingURL=style.css.map */

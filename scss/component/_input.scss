@@ -1,0 +1,86 @@
+.input__item {
+    background-color: $color-white-1;
+    border-top-left-radius: $br-1;
+    border-bottom-left-radius: $br-1;
+    border-right: 1px solid $color-grey-3;
+    .input__icon {
+        height: $fs-10;
+        text-align: center;
+        i {
+            line-height: $fs-10;
+        }
+    }
+    input {
+        height: $fs-10;
+        padding: 0;
+        &.form-control:focus {
+            box-shadow: none;
+        }
+    }
+    .dropdown {
+        position: relative;
+        .dropdown-toggle::after {
+            content: unset;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 4px !important;
+            left: 0 !important;
+            width: 100%;
+            border: none;
+            padding: 0;
+            border-radius: $br-1;
+            overflow: hidden;
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    padding: 5px 15px;
+                    a {
+                        @include text ($color-black-2, $fs-0, $fw-0);
+                        text-decoration: none;
+                    }
+                    &:hover, &.active {
+                        background-color: $color-blue-5;
+                        a {
+                            font-weight: $fw-4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Xóa 2 dấu arrow trong input kiểu date
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    .input__item {
+        border-radius: $br-1;
+        .input__icon {
+            height: $fs-9;
+            i {
+                line-height: $fs-9;
+            }
+        }
+        input {
+            height: $fs-9;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
