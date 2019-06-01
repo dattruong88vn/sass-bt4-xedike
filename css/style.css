@@ -154,6 +154,58 @@
 @media screen and (min-width: 1200px) {
   #myHeader .header__contain {
     width: 90%; } }
+#taiXe .taiXe__content {
+  margin: 0 auto; }
+  #taiXe .taiXe__content .taiXe__left {
+    position: relative; }
+    #taiXe .taiXe__content .taiXe__left img {
+      position: absolute;
+      text-align: center; }
+    #taiXe .taiXe__content .taiXe__left .taixe1 {
+      position: relative !important;
+      z-index: 3;
+      margin: auto; }
+    #taiXe .taiXe__content .taiXe__left .taixe2 {
+      left: -60px; }
+    #taiXe .taiXe__content .taiXe__left .taixe3 {
+      right: -60px; }
+  #taiXe .taiXe__content .taiXe__right {
+    padding: 0 40px;
+    text-align: center; }
+    #taiXe .taiXe__content .taiXe__right h1 {
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 18px; }
+    #taiXe .taiXe__content .taiXe__right p {
+      padding: 0 20px;
+      white-space: normal;
+      color: #707070;
+      font-size: 16px;
+      font-weight: normal;
+      margin-bottom: 16px;
+      line-height: 30px; }
+    #taiXe .taiXe__content .taiXe__right button {
+      margin-top: 20px; }
+
+@media screen and (min-width: 768px) {
+  #taiXe .taiXe__content .taiXe__left .taixe2 {
+    left: -20px; }
+  #taiXe .taiXe__content .taiXe__left .taixe3 {
+    right: -20px; }
+  #taiXe .taiXe__content .taiXe__right {
+    text-align: left; }
+    #taiXe .taiXe__content .taiXe__right p {
+      padding: 0; } }
+@media screen and (min-width: 992px) {
+  #taiXe .taiXe__content {
+    width: 90%; }
+    #taiXe .taiXe__content .taiXe__left .taixe2 {
+      left: 0px; }
+    #taiXe .taiXe__content .taiXe__left .taixe3 {
+      right: 0px; }
+    #taiXe .taiXe__content .taiXe__right p {
+      padding: 0; } }
 #why .why-container {
   background-color: #f3fcff;
   padding: 40px 0; }
